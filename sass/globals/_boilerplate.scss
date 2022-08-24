@@ -1,0 +1,36 @@
+@use '../util' as *;
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	font-family: $secondary-font;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	font-weight: 400;
+}
+input,
+textarea,
+select,
+button {
+	outline: none;
+}
+input {
+	line-height: normal;
+}
+label,
+button {
+	cursor: pointer;
+}
