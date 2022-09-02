@@ -38,6 +38,11 @@ ul {
 li {
 	list-style-type: none;
 }
+small,
+.small {
+	font-size: 80%;
+	font-weight: 400;
+}
 .img-responsive {
 	max-width: 100%;
 	display: block;

@@ -1,0 +1,42 @@
+.reviewer {
+	&__item {
+		background: var(--bg-color);
+		border-radius: 4px;
+		box-shadow: 0 20px 62px var(--box-shadow-color);
+		padding: 2rem;
+	}
+	&__sub {
+		& > q {
+			&::before {
+				font-size: 50px;
+				color: var(--secondary-color);
+				font-family: initial;
+				line-height: 0.8;
+				padding-top: 8px;
+				display: inline-block;
+			}
+		}
+	}
+	&__profile {
+		display: grid;
+		grid-template-columns: 0.3fr 1fr;
+		align-items: center;
+		grid-gap: 5px;
+		margin-top: 1.5em;
+	}
+	&__avatar {
+		& > img {
+			border-radius: 50%;
+		}
+	}
+	&__info {
+		& > h5 {
+			font-weight: 600;
+			line-height: 16px;
+		}
+		& > p {
+			font-size: 13px;
+			color: var(--font-color);
+		}
+	}
+}
