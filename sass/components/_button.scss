@@ -1,19 +1,28 @@
 @use '../util' as *;
 
-.btn-custom {
-	padding: 20px 35px;
-	font-size: 16px;
+.btn-style {
+	padding: 14px 30px;
 	font-weight: 600;
-	border: none;
-	transition: all 0.5s;
+	font-size: 16px;
+	color: #060606;
 	border-radius: 4px;
-	color: #fff;
-	cursor: pointer;
-	outline: 0;
-	text-transform: uppercase;
-	line-height: 1.5;
+	background: #fff;
+	border: none;
 	font-family: $primary-font;
+	transition: all 0.25s ease-in-out;
 	&:hover {
-		background-color: var(--secondary-color);
+		background: var(--secondary-color);
+		color: #fff;
+		transition: 0.3s ease-out;
+	}
+	&-secondary {
+		background: var(--secondary-color);
+		color: #fff;
+		transition: 0.3s ease-out;
+		&:hover {
+			background: var(--primary-color);
+			color: #fff;
+			transition: 0.3s ease-out;
+		}
 	}
 }
