@@ -130,6 +130,20 @@ small,
   --box-shadow-color: rgb(4 20 69 / 10%);
 }
 
+.numbers__content {
+  border-right: 1px solid var(--border-color-light);
+}
+.numbers__content > .counter {
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--heading-color);
+  font-family: "Segoe UI", sans-serif;
+}
+.numbers__text {
+  text-transform: uppercase;
+  color: var(--heading-color);
+}
+
 .reviewer__item {
   background: var(--bg-color);
   border-radius: 4px;

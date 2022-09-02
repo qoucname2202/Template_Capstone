@@ -1,0 +1,16 @@
+@use '../util' as *;
+.numbers {
+	&__content {
+		border-right: 1px solid var(--border-color-light);
+		& > .counter {
+			font-size: 46px;
+			font-weight: 600;
+			color: var(--heading-color);
+			font-family: $primary-font;
+		}
+	}
+	&__text {
+		text-transform: uppercase;
+		color: var(--heading-color);
+	}
+}
