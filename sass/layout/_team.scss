@@ -38,6 +38,15 @@
 		padding: 10px;
 		background: #fff;
 		border-radius: 8px;
+		&:hover {
+			.team__bottom {
+				.team__name {
+					& > a {
+						color: var(--secondary-color);
+					}
+				}
+			}
+		}
 	}
 	&__top {
 		position: relative;
